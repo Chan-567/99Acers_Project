@@ -1,0 +1,378 @@
+!SESSION 2024-04-02 15:24:11.521 -----------------------------------------------
+eclipse.buildId=4.25.0.I20220831-1800
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-04-02 15:24:13.043
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.lsp4e [584]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.15.0,0.16.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j.jsonrpc [588]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="[0.15.0,0.16.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j [586]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.lsp4e.debug 4 0 2024-04-02 15:24:13.047
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.lsp4e.debug [585]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.15.0,0.16.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j.jsonrpc [588]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.debug; bundle-version="[0.15.0,0.16.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.debug; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j.debug [587]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc.debug; bundle-version="[0.15.0,0.16.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc.debug; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j.jsonrpc.debug [589]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.wildwebdeveloper 4 0 2024-04-02 15:24:13.163
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wildwebdeveloper [768]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="0.12.0"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j [586]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4e; bundle-version="0.13.6"
+    -> Bundle-SymbolicName: org.eclipse.lsp4e; bundle-version="0.14.0.202208241334"; singleton:="true"
+       org.eclipse.lsp4e [584]
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.15.0,0.16.0)"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.15.0.v20220805-0131"
+              org.eclipse.lsp4j.jsonrpc [588]
+                Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="[0.15.0,0.16.0)"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.15.0.v20220805-0131"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="0.12.0"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.15.0.v20220805-0131"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 4 0 2024-04-02 15:24:13.167
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wildwebdeveloper.xml [771]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j [586]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4e; bundle-version="0.13.4"
+    -> Bundle-SymbolicName: org.eclipse.lsp4e; bundle-version="0.14.0.202208241334"; singleton:="true"
+       org.eclipse.lsp4e [584]
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.15.0,0.16.0)"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.15.0.v20220805-0131"
+              org.eclipse.lsp4j.jsonrpc [588]
+                Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="[0.15.0,0.16.0)"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.15.0.v20220805-0131"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-04-02 15:24:57.593
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\skchan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-04-02 16:42:16.929 -----------------------------------------------
+eclipse.buildId=4.25.0.I20220831-1800
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-04-02 16:42:18.333
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.lsp4e [584]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.15.0,0.16.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j.jsonrpc [588]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="[0.15.0,0.16.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j [586]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.lsp4e.debug 4 0 2024-04-02 16:42:18.335
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.lsp4e.debug [585]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc.debug; bundle-version="[0.15.0,0.16.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc.debug; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j.jsonrpc.debug [589]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.15.0,0.16.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j.jsonrpc [588]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.debug; bundle-version="[0.15.0,0.16.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.debug; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j.debug [587]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.wildwebdeveloper 4 0 2024-04-02 16:42:18.421
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wildwebdeveloper [768]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="0.12.0"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j [586]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4e; bundle-version="0.13.6"
+    -> Bundle-SymbolicName: org.eclipse.lsp4e; bundle-version="0.14.0.202208241334"; singleton:="true"
+       org.eclipse.lsp4e [584]
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.15.0,0.16.0)"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.15.0.v20220805-0131"
+              org.eclipse.lsp4j.jsonrpc [588]
+                Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="[0.15.0,0.16.0)"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.15.0.v20220805-0131"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="0.12.0"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.15.0.v20220805-0131"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 4 0 2024-04-02 16:42:18.425
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wildwebdeveloper.xml [771]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4e; bundle-version="0.13.4"
+    -> Bundle-SymbolicName: org.eclipse.lsp4e; bundle-version="0.14.0.202208241334"; singleton:="true"
+       org.eclipse.lsp4e [584]
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.15.0,0.16.0)"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.15.0.v20220805-0131"
+              org.eclipse.lsp4j.jsonrpc [588]
+                Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="[0.15.0,0.16.0)"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.15.0.v20220805-0131"
+              org.eclipse.lsp4j [586]
+                Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.15.0.v20220805-0131"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-04-02 16:42:24.848
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\skchan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-04-02 16:43:30.243 -----------------------------------------------
+eclipse.buildId=4.25.0.I20220831-1800
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-04-02 16:43:31.462
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.lsp4e [584]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.15.0,0.16.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j.jsonrpc [588]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="[0.15.0,0.16.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j [586]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.lsp4e.debug 4 0 2024-04-02 16:43:31.465
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.lsp4e.debug [585]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc.debug; bundle-version="[0.15.0,0.16.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc.debug; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j.jsonrpc.debug [589]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.15.0,0.16.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j.jsonrpc [588]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.debug; bundle-version="[0.15.0,0.16.0)"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.debug; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j.debug [587]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.wildwebdeveloper 4 0 2024-04-02 16:43:31.544
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wildwebdeveloper [768]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="0.12.0"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.15.0.v20220805-0131"
+       org.eclipse.lsp4j [586]
+         Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4e; bundle-version="0.13.6"
+    -> Bundle-SymbolicName: org.eclipse.lsp4e; bundle-version="0.14.0.202208241334"; singleton:="true"
+       org.eclipse.lsp4e [584]
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.15.0,0.16.0)"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.15.0.v20220805-0131"
+              org.eclipse.lsp4j.jsonrpc [588]
+                Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="[0.15.0,0.16.0)"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.15.0.v20220805-0131"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="0.12.0"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.15.0.v20220805-0131"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 4 0 2024-04-02 16:43:31.547
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wildwebdeveloper.xml [771]
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4e; bundle-version="0.13.4"
+    -> Bundle-SymbolicName: org.eclipse.lsp4e; bundle-version="0.14.0.202208241334"; singleton:="true"
+       org.eclipse.lsp4e [584]
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j.jsonrpc; bundle-version="[0.15.0,0.16.0)"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j.jsonrpc; bundle-version="0.15.0.v20220805-0131"
+              org.eclipse.lsp4j.jsonrpc [588]
+                Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="[0.15.0,0.16.0)"
+           -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.15.0.v20220805-0131"
+              org.eclipse.lsp4j [586]
+                Unresolved requirement: Import-Package: com.google.gson.annotations; version="[2.9.0,2.10.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.lsp4j; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.lsp4j; bundle-version="0.15.0.v20220805-0131"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-04-02 16:43:45.587
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\skchan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

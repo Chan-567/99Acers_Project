@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="68.141" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="buy a home" name="For buying a home" time="14.486">
+<system-out><![CDATA[
+Given after successful login into the 99Acres website.......................passed
+When user selects the for buyer option on website it shows a dropdown.......passed
+And select the property in hyderabad option and clicks unnder construction option.passed
+Then select the divine space 2BHK flat......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="buy a home" name="To buy a Plot" time="10.02">
+<system-out><![CDATA[
+Given after successful login into the 99Acres website.......................passed
+When user selects buyer option then click on Plot and click on East facing option.passed
+And select one Plot.........................................................passed
+Then view the review page...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="buy a home" name="To buy a commercial property" time="14.235">
+<system-out><![CDATA[
+Given after successful login into the 99Acres website.......................passed
+When user selects buyer option then clicks on commercial sale in Hyderabad..passed
+And clicks on Post property.................................................passed
+Then it should clicks dropdown button and display required..................passed
+]]></system-out>
+</testcase>
+<testcase classname="buy a home" name="Insights assertion" time="16.691">
+<system-out><![CDATA[
+Given after successful login into the 99Acres website.......................passed
+When user selects buyer option then clicks on insights......................passed
+And clicks on locality insights.............................................passed
+Then display whether chosen city is selected or not.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="buy a home" name="Mobile App" time="12.507">
+<system-out><![CDATA[
+Given after successful login into the 99Acres website.......................passed
+When user selects buyer option then clicks on commercial....................passed
+And clicks on first link....................................................passed
+Then clicks on mobile app option............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
